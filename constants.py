@@ -4,7 +4,7 @@ import streamlit as st
 LOGO_FULL = "images/logofull.png"
 LOGO_ICON = "images/logoicon.png"
 
-OPENAI_API_KEY = "sk-None-bN85JHCglyyDxoAbLqnxT3BlbkFJSuAuPTzL2c1IYOSR2iR0"
+OPENAI_API_KEY = "<Enter your API Key here>"
 
 
 TEMPLATE_6 = """
