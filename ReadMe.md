@@ -1,0 +1,43 @@
+#  Quantitative Financial Analytics and Algorithmic Trading (QFAAT) Autograder app
+
+QFAAT Autograder app with Streamlit.
+
+## Overview of the App
+
+This app showcases one use case of LLM in serving as an autograder/autofeedback agent to students submissions.
+
+Currently it provides feedbacks for the following submissions:
+
+- Assignment 6: Midterm Exam
+- Assignment 7: Strategy Robustness
+- Assignment 8: Strategy Execution
+- QRT Report 1: Stability Analysis Report
+
+## Demo App
+
+### Get an OpenAI API key
+
+You can get your own OpenAI API key by following the following instructions:
+
+1. Go to https://platform.openai.com/account/api-keys.
+2. Click on the `+ Create new secret key` button.
+3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
+
+*TODO: Remove API key from development env.* 
+
+## Run it locally
+
+```sh
+virtualenv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Some limitations of the app
+
+- Only pdf support.
+- Fewer files to generate wider context.
+- Responses are not fixed, which is a feature of LLM models
+- No memory, between user uploads or interactions
+- #TODO Future feature to add will be an entry box for the user to include their API key.
