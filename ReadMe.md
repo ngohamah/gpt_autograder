@@ -23,9 +23,10 @@ You can get your own OpenAI API key by following the following instructions:
 2. Click on the `+ Create new secret key` button.
 3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
 
-*TODO: Remove API key from development env.* 
-
 ## Run it locally
+
+Before running app go to constants.py file and 
+insert your OPENAI_API_KEY
 
 ```sh
 virtualenv .venv
@@ -40,4 +41,3 @@ streamlit run app.py
 - Fewer files to generate wider context.
 - Responses are not fixed, which is a feature of LLM models
 - No memory, between user uploads or interactions
-- #TODO Future feature to add will be an entry box for the user to include their API key.
