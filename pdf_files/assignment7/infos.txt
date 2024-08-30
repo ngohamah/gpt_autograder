@@ -1,0 +1,17 @@
+# infos.txt
+# =========
+
+# description.pdf
+This file has information regarding the assignment objectives.
+
+# context.pdf
+This file contains information pertaining to a student's submission. For the llm
+to learn from it. 
+
+# sample_evaluation.pdf
+This file contains information of how the instructor evaluated the context.pdf file 
+submitted by the student. To help the llm learn how to go about student reviews.
+
+# user_input.pdf
+This is a test file to see what kind of output the llm would generate based on
+the above description, context and evaluation files uploaded.

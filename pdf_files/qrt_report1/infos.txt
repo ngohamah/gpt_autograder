@@ -1,0 +1,17 @@
+# infos.txt
+# =========
+
+# description.pdf
+Contains information about the assignment objectives.
+
+# context.pdf
+Contains information of a great student submission
+
+
+# sample_evaluation.pdf
+Contains information of the instructors evaluation
+
+
+
+
+
