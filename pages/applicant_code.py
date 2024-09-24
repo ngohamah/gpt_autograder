@@ -1,20 +1,15 @@
 import os
-import time
-from typing import List, Tuple
+from typing import Any, Dict, List, Tuple
 
 import streamlit as st
-from helpers import (
-    get_prompt,
-    read_folder_content,
-    read_pdf,
-    read_text_file_as_list,
-    select_folder,
-)
+from helpers import (get_prompt, read_folder_content, read_pdf,
+                     read_text_file_as_list, select_folder)
 from langchain.docstore.document import Document
+from langchain_core.messages.base import BaseMessage
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
-from constants import TEMPLATE_INTRO_TASK_NEW, TEMPLATE_SUMMARISE_CODE
+from constants import TEMPLATE_INTRO_TASK, TEMPLATE_SUMMARISE_CODE
 
 
 @st.cache_data
@@ -53,8 +48,23 @@ def read_data_for_query() -> Tuple[str, List[Document], List[str], str]:
 
 def get_model_response(
     prompt_template: PromptTemplate,
-    query_data: dict,
-):
+    query_data: Dict[str, Any],
+) -> BaseMessage:
+    """
+    Queries the LLM using the prompt template and query data and
+    returns the response.
+
+    Args:
+        prompt_template (PromptTemplate): A prompt template.
+        query_data (Dict[str, Any]): A dictionary containing the names
+            of the variables expected by the prompt template as keys
+            and the actual values of the variables as values of the
+            dictionary.
+
+    Returns:
+        (BaseMessage): It returns the response from the LLM as a
+            BaseMessage.
+    """
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.5)
     llm_chain = prompt_template | llm
 
@@ -120,7 +130,10 @@ def analyse_code_with_llm(
 
 
 def code_review_page():
-    st.title("Applicant code")
+    """
+    Function for the contents of the code review page.
+    """
+    st.title("Introductory Task Auto Reviewer")
     selected_folder_path = st.session_state.get("folder_path", None)
     verbose = st.toggle("Verbose response", value=True)
 
@@ -138,7 +151,7 @@ def code_review_page():
             "user_input",
             "question",
         ]
-        prompt = get_prompt(TEMPLATE_INTRO_TASK_NEW, input_variables)
+        prompt = get_prompt(TEMPLATE_INTRO_TASK, input_variables)
 
         st.markdown("###### AI Feedback")
 

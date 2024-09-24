@@ -90,7 +90,7 @@ TEMPLATE_9_QRT = """ """
 # """
 
 
-TEMPLATE_INTRO_TASK_NEW = (
+TEMPLATE_INTRO_TASK = (
     "You are an expert code reviewer. Your task is to assess the correctness"
     " of the following Python script. Compare it against the specification "
     "file and the good solution.\n"

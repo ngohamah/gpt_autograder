@@ -40,6 +40,15 @@ def getText(file: Union[BufferedReader, str]) -> str:
 
 
 def read_pdf(file_path: str) -> str:
+    """
+    Reads all pages of a pdf file and returns it as a single string.
+    
+    Args:
+        file_path (str): path to the pdf file.
+
+    Returns:
+        (str): A string containing the contents of the pdf file.
+    """
     with open(file_path, "rb") as file:
         return getText(file)
 
@@ -212,6 +221,13 @@ def read_text_file_as_list(file_path: str) -> List[str]:
     """
     Opens a text file and returns its contents as a list with each
     element representing a line in the file.
+
+    Args:
+        file_path (str): path to a file.
+
+    Returns:
+        (List[str]): A list containing each line in the file as an
+            element.
     """
     res = []
     with open(file_path, "r") as curr_file:
@@ -238,8 +254,19 @@ def select_folder() -> str:
     return folder_path
 
 
-def get_prompt(temp: str, input_variables):
+def get_prompt(temp: str, input_variables: List[str]) -> PromptTemplate:
+    """
+    Creates and returns a prompt template.
+    
+    Args:
+        temp(str): A prompt which has variables enclosed in curly
+            brackets.
+        input_variables (List[str]): A list containing the variables
+            that were used in the temp string.
 
+    Returns:
+        (PromptTemplate): Returns a prompt template.
+    """
     prompt_template = PromptTemplate(
         template=temp, input_variables=input_variables
     )
