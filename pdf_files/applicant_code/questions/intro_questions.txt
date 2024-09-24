@@ -1,0 +1,16 @@
+Did the candidate submit a valid "speed testing report" with a table, a graph and at least 5 different algorithms benchmarked on both reread_on_query options in a PDF format?
+From the speed test report, does the server meet the speed requirements for the condition where reread on query is true and the condition where reread on query is False?
+Did the candidate submit the client.py along with the server?
+Are 1 to 16 points of the specification met with functional, working code? If not, state the points which have not been met with functional code.
+Did the candidate submit code that only matches the whole line in the text file, and does not give false positives for partial matches?
+Did the candidate submit full installation instructions on how to install the code as a Linux daemon that always runs?
+Is the SSL authentication implemented correctly?
+Is the code pythonic, simple, straightforward, well documented, readable, clean, commented, pep8 compliant, and using the best practices outlined?
+Is the code statically typed using mypy?
+Do the unit tests the candidate wrote cover 100% of the functionality in the specification with all the corner cases?
+Is the exception handling of the server robust and covering edge cases with intelligent and useful error messages?
+Will the test suite run flawlessly in a stand-alone fashion? Did the candidate hardcode any paths in the repository either in the test suite or anywhere else or made some other mistakes?
+Did the candidate include steps to create SSL files for authentication?
+Do the tests rely on the current inputs in the config file used in productions to run or is it independent of the current inputs in the production config files?
+Does the candidate's submission contain bad English spelling or grammar in the comments, documentation or code?
+When SSL is enabled, will the server receiving a payload that is not SSL authenticated crash the server?

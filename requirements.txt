@@ -9,3 +9,7 @@ langchain-chroma
 pypdf
 pypdf2
 streamlit
+unstructured
+markdown
+rapidocr-onnxruntime
+python-magic-bin
