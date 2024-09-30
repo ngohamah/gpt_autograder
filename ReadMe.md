@@ -34,6 +34,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
+## Sample output
+![Sample LLM Output](images/gpt_autograder_output)
 
 ## Some limitations of the app
 
