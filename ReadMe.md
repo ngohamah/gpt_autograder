@@ -36,9 +36,7 @@ streamlit run app.py
 ```
 ## Sample output
 
-![Sample LLM Output](images/gpt_autograder_output)
-
-<img src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/Procaliber95-25-47223-A-Portrait" alt="Mountain Bike" width="300" height="200">
+![Sample LLM Output](https://github.com/ngohamah/gpt_autograder/blob/main/images/gpt_autograder_output.png)
 
 ## Some limitations of the app
 
