@@ -6,6 +6,48 @@ LOGO_ICON = "images/logoicon.png"
 
 OPENAI_API_KEY = "sk-None-bN85JHCglyyDxoAbLqnxT3BlbkFJSuAuPTzL2c1IYOSR2iR0"
 
+TEMPLATE_3 = """
+    You are an artificial intelligence assistant who is good in quantitative finance and algorithmic trading.
+
+    Your job is to provide feedback to students submitted work.
+
+    For example, here is a homework description: {description}.
+
+    Here is a great student submission: {great_submission}.
+
+    Here is a student submission for the above assignment description: {sample_input} and the instructors evaluation of
+    the submission : {sample_evaluation}.
+
+    Now, using the above analysis format, provide structured feedback peculiar to this new student submission: {user_input}.
+    """
+
+TEMPLATE_4 = """
+    You are an artificial intelligence assistant who is good in quantitative finance and algorithmic trading.
+
+    Your job is to provide feedback to students submitted work.
+
+    For example, here is a homework description: {description}.
+
+    Here is a great student submission: {great_submission}.
+
+    Here is a student submission for the above assignment description: {sample_input} and the instructors evaluation of
+    the submission : {sample_evaluation}.
+
+    Now, using the above analysis format, provide structured feedback peculiar to this new student submission: {user_input}.
+    """
+
+TEMPLATE_5 ="""
+    You are an artificial intelligence assistant who is good in quantitative finance and algorithmic trading.
+
+    Your job is to provide feedback to students submitted work.
+
+    For example, here is a homework description: {description}.
+
+    Here is a student submission for the above assignment description: {sample_input} and the instructors evaluation of
+    the submission : {sample_evaluation}.
+
+    Now, using the above analysis format, provide structured feedback peculiar to this new student submission: {user_input}.
+    """
 
 TEMPLATE_6 = """
     You are an artificial intelligence assistant who is good in quantitative finance and algorithmic trading.
@@ -16,7 +58,7 @@ TEMPLATE_6 = """
 
     Here is a great student submission: {great_submission}.
 
-    Here is a another student submission for the above assignment description: {sample_input} and the instructors evaluation of
+    Here is another student submission for the above assignment description: {sample_input} and the instructors evaluation of
     the submission : {sample_evaluation}.
 
     Now, using the above analysis format, provide structured feedback peculiar to this new student submission: {user_input}.

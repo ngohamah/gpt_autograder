@@ -1,0 +1,13 @@
+# infos.txt
+# =========
+
+# description5.pdf
+This file contains information about the assignment objectives.
+
+# context5.pdf 
+This file contains information for a good student submission of the assignment.
+
+# sample_evaluation5.pdf
+This is the feedback the instructor provided.
+
+

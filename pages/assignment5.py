@@ -1,30 +1,13 @@
 import streamlit as st
-from langchain_openai import ChatOpenAI
 
-from constants import TEMPLATE_7
+from constants import TEMPLATE_5
 from helpers import get_prompt, getText, read_pdf
+from assignment7 import get_model_response
 
 
-def get_model_response(
-        prompt_template,
-        description_text,
-        context_pdf_text,
-        sample_evaluation_text,
-        user_input_text,
-):
+def page5():
+    st.title("A5: Query and Backtest Currency Data")
 
-    llm = ChatOpenAI()
-    llm_chain = prompt_template | llm
-
-    response = llm_chain.invoke({"description": description_text,
-                                 "sample_input": context_pdf_text,
-                                 "sample_evaluation": sample_evaluation_text,
-                                 "user_input": user_input_text})
-    return response
-
-
-def page7():
-    st.title("A7: Strategy Robustness")
     uploaded_file = st.file_uploader(
         "Upload your report",
         type=("pdf"),
@@ -33,9 +16,9 @@ def page7():
     if uploaded_file is not None:
         user_input_text = getText(uploaded_file)
 
-        file_path1 = "../pdf_files/assignment7/context.pdf"
-        file_path3 = "../pdf_files/assignment7/description.pdf"
-        file_path4 = "../pdf_files/assignment7/sample_evaluation.pdf"
+        file_path1 = "../pdf_files/assignment5/context5.pdf"
+        file_path3 = "../pdf_files/assignment5/description5.pdf"
+        file_path4 = "../pdf_files/assignment5/sample_evaluation5.pdf"
 
         context_pdf_text = read_pdf(file_path1)
         description_text = read_pdf(file_path3)
@@ -46,7 +29,7 @@ def page7():
             "sample_input",
             "sample_evaluation",
             "user_input"]
-        prompt = get_prompt(TEMPLATE_7, input_variables)
+        prompt = get_prompt(TEMPLATE_5, input_variables)
 
         response = get_model_response(
             prompt,

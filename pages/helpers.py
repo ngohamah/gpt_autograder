@@ -23,13 +23,17 @@ def getText(file):
 
 
 def read_pdf(file_path):
-    with open(file_path, 'rb') as file:
-        return getText(file)
+    try:
+        with open(file_path, 'rb') as file:
+            return getText(file)
+    except Exception:
+        raise
 
 
 def get_prompt(temp, input_variables):
-
-    prompt_template = PromptTemplate(template=temp,
-                                     input_variables=input_variables)
-
-    return prompt_template
+    try:
+        prompt_template = PromptTemplate(template=temp,
+                                        input_variables=input_variables)
+        return prompt_template
+    except:
+        raise

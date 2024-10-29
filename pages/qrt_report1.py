@@ -5,9 +5,11 @@ from assignment7 import get_model_response
 from helpers import get_prompt, read_pdf, getText
 
 
-def page4():
-    st.info("Note! This is QRT, AI feedback is limited or might not be available")
-    st.title("QRT: Report 1 (SA)")
+def page9():
+    st.warning("Note!\
+            This is QRT, and AI feedback is limited or not available.\
+            Please refer to the assignment description document for more details .", icon="⚠️")
+    st.title("QRT: Report 1 (Stability Analysis)")
 
     uploaded_file = st.file_uploader(
         "Upload your report",
@@ -17,9 +19,9 @@ def page4():
     if uploaded_file is not None:
         user_input_text = getText(uploaded_file)
 
-        file_path1 = "pdf_files/assignment6/context.pdf"
-        file_path3 = "pdf_files/assignment6/description.pdf"
-        file_path4 = "pdf_files/assignment6/sample_evaluation.pdf"
+        file_path1 = "../pdf_files/assignment6/context.pdf"
+        file_path3 = "../pdf_files/assignment6/description.pdf"
+        file_path4 = "../pdf_files/assignment6/sample_evaluation.pdf"
 
         context_pdf_text = read_pdf(file_path1)
         description_text = read_pdf(file_path3)
