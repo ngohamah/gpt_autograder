@@ -8,4 +8,4 @@ langgraph
 langchain-chroma
 pypdf
 pypdf2
-streamlit
+streamlit-player
