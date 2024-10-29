@@ -44,7 +44,8 @@ pip3 install -r requirements.txt
 streamlit run app.py
 ```
 ## Demo 
-[Sample Run](https://github.com/ngohamah/gpt_autograder/blob/main/images/demo.png)
+![Sample Run](https://github.com/ngohamah/gpt_autograder/blob/main/images/demo.png)
+
 ## Some limitations of the app
 
 - Only PDF file support.
