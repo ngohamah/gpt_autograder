@@ -16,9 +16,9 @@ def page5():
     if uploaded_file is not None:
         user_input_text = getText(uploaded_file)
 
-        file_path1 = "../pdf_files/assignment5/context5.pdf"
-        file_path3 = "../pdf_files/assignment5/description5.pdf"
-        file_path4 = "../pdf_files/assignment5/sample_evaluation5.pdf"
+        file_path1 = "pdf_files/assignment5/context5.pdf"
+        file_path3 = "pdf_files/assignment5/description5.pdf"
+        file_path4 = "pdf_files/assignment5/sample_evaluation5.pdf"
 
         context_pdf_text = read_pdf(file_path1)
         description_text = read_pdf(file_path3)
