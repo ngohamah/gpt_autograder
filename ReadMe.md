@@ -39,6 +39,7 @@ source .venv/bin/activate
 git clone github.com/ngohamah/gpt_autograder
 cd gpt_autograder
 pip3 install -r requirements.txt
+pip install --upgrade streamlit
 
 # run app
 streamlit run app.py
