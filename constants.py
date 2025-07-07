@@ -4,7 +4,7 @@ import streamlit as st
 LOGO_FULL = "images/logofull.png"
 LOGO_ICON = "images/logoicon.png"
 
-OPENAI_API_KEY = ""
+OPENAI_API_KEY = "insert your api key here"
 
 TEMPLATE_3 = """
     You are an artificial intelligence assistant who is good in quantitative finance and algorithmic trading.
