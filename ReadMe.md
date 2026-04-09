@@ -16,6 +16,10 @@ Currently it provides feedbacks for the following submissions:
 - Assignment 8: Strategy Execution
 - QRT Report 1: Stability Analysis Report
 
+## Workflow
+
+![Workflow](https://github.com/ngohamah/gpt_autograder/blob/main/images/workflow.png)
+
 ## Demo App
 
 ### Get an OpenAI API key
