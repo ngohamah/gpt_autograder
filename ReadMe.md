@@ -30,8 +30,6 @@ You can get your own OpenAI API key by following the following instructions:
 2. Click on the `+ Create new secret key` button.
 3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
 
-*TODO: Remove API key from development env.* 
-
 ## Run it locally
 
 ```sh
