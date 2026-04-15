@@ -38,7 +38,7 @@ virtualenv .venv
 source .venv/bin/activate
 
 # clone repository
-git clone github.com/ngohamah/gpt_autograder
+git clone https://github.com/ngohamah/gpt_autograder.git
 cd gpt_autograder
 pip3 install -r requirements.txt
 pip install --upgrade streamlit
